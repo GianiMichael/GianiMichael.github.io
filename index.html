@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giancarlo Michael — Telecom to Clean Energy</title>
+<meta name="description" content="Portfolio of Giancarlo (Giani) Michael — enterprise procurement, contract lifecycle management, and a U.S. net metering analysis project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- The wire: one continuous line down the left rail, drawn in on scroll -->
+<svg class="wire" viewBox="0 0 60 3200" preserveAspectRatio="none" aria-hidden="true">
+  <!-- Twisted pair, telecom (top) -->
+  <path class="wire__path wire__path--copper" d="M30,0
+    C10,60 50,120 30,180
+    C10,240 50,300 30,360
+    C10,420 50,480 30,540
+    C10,600 50,660 30,720" />
+  <!-- Junction node 1 -->
+  <circle class="wire__node" cx="30" cy="720" r="7" />
+
+  <!-- Straightening run into About -->
+  <path class="wire__path wire__path--copper" d="M30,720
+    C20,780 40,840 30,900
+    L30,1080" />
+  <circle class="wire__node" cx="30" cy="1080" r="7" />
+
+  <!-- Branch begins, still copper, feeding into Projects -->
+  <path class="wire__path wire__path--copper" d="M30,1080
+    L30,1300
+    C30,1340 45,1350 45,1390
+    L45,1560" />
+  <circle class="wire__node" cx="45" cy="1560" r="7" />
+
+  <!-- Transition zone: copper fades toward teal grid branches -->
+  <path class="wire__path wire__path--mix" d="M45,1560
+    L45,1780
+    C45,1820 15,1830 15,1870
+    L15,2040" />
+  <circle class="wire__node wire__node--teal" cx="15" cy="2040" r="7" />
+
+  <!-- Transmission grid branch, teal -->
+  <path class="wire__path wire__path--teal" d="M15,2040
+    L15,2200
+    M15,2120 L45,2120
+    M15,2120 L0,2160" />
+  <circle class="wire__node wire__node--teal" cx="15" cy="2200" r="7" />
+
+  <path class="wire__path wire__path--teal" d="M15,2200
+    L15,2400
+    M15,2300 L45,2280
+    M15,2300 L-5,2340" />
+  <circle class="wire__node wire__node--teal" cx="15" cy="2400" r="7" />
+
+  <path class="wire__path wire__path--teal" d="M15,2400
+    L15,2700
+    M15,2560 L45,2540" />
+
+  <path class="wire__path wire__path--teal" d="M15,2700 L15,3200" />
+</svg>
+
+<header class="nav" id="top">
+  <a class="nav__brand" href="#top">GM</a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#writeups">Writeups</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav__resume" href="#" id="resumeLink">Resume</a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">GIANCARLO "GIANI" MICHAEL</p>
+    <h1 class="hero__headline">The wire doesn't care<br>what it carries.</h1>
+    <p class="hero__sub">
+      Ten years leading enterprise telecom procurement and contract lifecycle
+      management — supplier complexity, multi-party contracts, regulated
+      technical markets. Now applying the same discipline to clean energy.
+    </p>
+
+    <div class="meter" aria-label="Project stats">
+      <div class="meter__item">
+        <span class="meter__value" data-count="10">0</span>
+        <span class="meter__label">Years of EIA Data</span>
+      </div>
+      <div class="meter__item">
+        <span class="meter__value" data-count="44309">0</span>
+        <span class="meter__label">MW Capacity Tracked</span>
+      </div>
+      <div class="meter__item">
+        <span class="meter__value" data-count="50">0</span>
+        <span class="meter__label">States Analyzed</span>
+      </div>
+    </div>
+
+    <div class="hero__cta">
+      <a href="#projects" class="btn btn--primary">See the work</a>
+      <a href="#contact" class="btn btn--ghost">Close the circuit</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section__jct">JCT 01</p>
+    <h2 class="section__title">About</h2>
+
+    <div class="about__grid">
+      <div class="about__copy">
+        <p>
+          I'm Giani — currently Global Account Lead at Six Play Consulting,
+          and Product Lead for ASTRA, a B2B SaaS platform I helped build
+          from scratch to manage enterprise telecom procurement and
+          contract lifecycles across multiple carriers.
+        </p>
+        <p>
+          Telecom procurement and clean energy procurement run on the same
+          circuit: supplier complexity, contract lifecycle management, and
+          multi-party relationships inside a regulated technical market.
+          This site is where I've been proving that out — combining a
+          decade of federal net metering data and documenting how ASTRA's
+          architecture maps onto energy supplier management.
+        </p>
+      </div>
+
+      <div class="about__chips">
+        <span class="chip">Supplier Management</span>
+        <span class="chip">Contract Lifecycle Mgmt</span>
+        <span class="chip">Enterprise Procurement</span>
+        <span class="chip">Python</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Tableau</span>
+        <span class="chip">Regulated Markets</span>
+        <span class="chip">B2B SaaS Product</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section__jct">JCT 02</p>
+    <h2 class="section__title">Projects</h2>
+
+    <div class="cards">
+      <!-- Project A: Net Metering -->
+      <article class="card">
+        <div class="card__media">
+          <!-- PLACEHOLDER: add assets/dashboard-preview.png and swap the div below for an <img> -->
+          <div class="card__media-placeholder">Dashboard preview — add screenshot</div>
+        </div>
+        <div class="card__body">
+          <h3>U.S. Net Metering Analysis, 2015–2024</h3>
+          <p>
+            Ten years of EIA Form 861 net metering data, cleaned in Python
+            and explored in Power BI, published as an interactive Tableau
+            dashboard covering solar capacity growth, commercial adoption
+            by state, and residential-vs-commercial trends.
+          </p>
+          <ul class="card__tags">
+            <li>Python</li>
+            <li>Power BI</li>
+            <li>Tableau Public</li>
+          </ul>
+          <div class="card__links">
+            <a href="https://public.tableau.com/app/profile/giancarlo.michael/viz/USNetMeteringAnalysis2015-2024/Dashboard1" target="_blank" rel="noopener">Live Dashboard →</a>
+            <a href="https://github.com/GianiMichael/solar-analysis" target="_blank" rel="noopener">GitHub Repo →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project B: ASTRA -->
+      <article class="card">
+        <div class="card__media">
+          <!-- PLACEHOLDER: add assets/astra-preview.png (redacted) and swap the div below for an <img> -->
+          <div class="card__media-placeholder">ASTRA preview — add redacted screenshot</div>
+        </div>
+        <div class="card__body">
+          <h3>ASTRA — Enterprise Telecom Procurement Platform</h3>
+          <p>
+            Built and led a proprietary B2B SaaS platform managing
+            enterprise telecom procurement, contract lifecycle, and client
+            reporting across multiple carriers and clients — the same
+            operational shape as enterprise clean energy procurement.
+          </p>
+          <ul class="card__tags">
+            <li>Product Lead</li>
+            <li>B2B SaaS</li>
+            <li>Contract Lifecycle Mgmt</li>
+          </ul>
+          <div class="card__links">
+            <!-- PLACEHOLDER: confirm final ASTRA case-study repo URL -->
+            <a href="https://github.com/GianiMichael/astra-platform" target="_blank" rel="noopener">GitHub Repo →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- WRITEUPS -->
+  <section class="section" id="writeups">
+    <p class="section__jct">JCT 03</p>
+    <h2 class="section__title">Writeups</h2>
+
+    <div class="note-card">
+      <span class="note-card__tag">IN DRAFT</span>
+      <p>
+        First writeup — on what building ASTRA taught me about supplier
+        complexity in regulated markets — is in progress. Check back soon.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--contact" id="contact">
+    <p class="section__jct">JCT 04</p>
+    <h2 class="section__title">Close the circuit</h2>
+    <p class="contact__sub">Always happy to talk clean energy, procurement, or data.</p>
+
+    <div class="contact__links">
+      <!-- PLACEHOLDER: add LinkedIn URL -->
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- PLACEHOLDER: add email address -->
+      <a href="mailto:PLACEHOLDER@example.com">Email</a>
+      <a href="https://github.com/GianiMichael" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Giancarlo Michael</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
