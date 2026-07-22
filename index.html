@@ -3,239 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giancarlo Michael — Telecom to Clean Energy</title>
-<meta name="description" content="Portfolio of Giancarlo (Giani) Michael — enterprise procurement, contract lifecycle management, and a U.S. net metering analysis project.">
+<title>Giancarlo Michael</title>
+<meta name="description" content="Giancarlo (Giani) Michael — enterprise account management, procurement strategy, and clean energy portfolio.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- The wire: one continuous line down the left rail, drawn in on scroll -->
-<svg class="wire" viewBox="0 0 60 3200" preserveAspectRatio="none" aria-hidden="true">
-  <!-- Twisted pair, telecom (top) -->
-  <path class="wire__path wire__path--copper" d="M30,0
-    C10,60 50,120 30,180
-    C10,240 50,300 30,360
-    C10,420 50,480 30,540
-    C10,600 50,660 30,720" />
-  <!-- Junction node 1 -->
-  <circle class="wire__node" cx="30" cy="720" r="7" />
-
-  <!-- Straightening run into About -->
-  <path class="wire__path wire__path--copper" d="M30,720
-    C20,780 40,840 30,900
-    L30,1080" />
-  <circle class="wire__node" cx="30" cy="1080" r="7" />
-
-  <!-- Branch begins, still copper, feeding into Projects -->
-  <path class="wire__path wire__path--copper" d="M30,1080
-    L30,1300
-    C30,1340 45,1350 45,1390
-    L45,1560" />
-  <circle class="wire__node" cx="45" cy="1560" r="7" />
-
-  <!-- Transition zone: copper fades toward teal grid branches -->
-  <path class="wire__path wire__path--mix" d="M45,1560
-    L45,1780
-    C45,1820 15,1830 15,1870
-    L15,2040" />
-  <circle class="wire__node wire__node--teal" cx="15" cy="2040" r="7" />
-
-  <!-- Transmission grid branch, teal -->
-  <path class="wire__path wire__path--teal" d="M15,2040
-    L15,2200
-    M15,2120 L45,2120
-    M15,2120 L0,2160" />
-  <circle class="wire__node wire__node--teal" cx="15" cy="2200" r="7" />
-
-  <path class="wire__path wire__path--teal" d="M15,2200
-    L15,2400
-    M15,2300 L45,2280
-    M15,2300 L-5,2340" />
-  <circle class="wire__node wire__node--teal" cx="15" cy="2400" r="7" />
-
-  <path class="wire__path wire__path--teal" d="M15,2400
-    L15,2700
-    M15,2560 L45,2540" />
-
-  <path class="wire__path wire__path--teal" d="M15,2700 L15,3200" />
-</svg>
-
 <header class="nav" id="top">
-  <a class="nav__brand" href="#top">GM</a>
-  <nav class="nav__links" aria-label="Primary">
+  <a class="nav__brand" href="#top">Giancarlo Michael</a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
     <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#writeups">Writeups</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a class="nav__resume" href="#" id="resumeLink">Resume</a>
 </header>
 
 <main>
 
   <!-- HERO -->
   <section class="hero">
-    <p class="eyebrow">GIANCARLO "GIANI" MICHAEL</p>
-    <h1 class="hero__headline">The wire doesn't care<br>what it carries.</h1>
-    <p class="hero__sub">
-      Ten years leading enterprise telecom procurement and contract lifecycle
-      management — supplier complexity, multi-party contracts, regulated
-      technical markets. Now applying the same discipline to clean energy.
-    </p>
-
-    <div class="meter" aria-label="Project stats">
-      <div class="meter__item">
-        <span class="meter__value" data-count="10">0</span>
-        <span class="meter__label">Years of EIA Data</span>
+    <div class="hero__copy">
+      <p class="eyebrow">Enterprise Sales &amp; Procurement</p>
+      <h1>Hi, I'm Giancarlo.</h1>
+      <p class="hero__role">Global Account Lead, transitioning toward clean energy partnerships.</p>
+      <p class="hero__sub">
+        Three-plus years managing enterprise procurement and account relationships
+        across telecom, AI infrastructure, and technology markets — now applying
+        that same discipline to clean energy sourcing and supplier management.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noopener">Download resume</a>
+        <a class="btn btn--ghost" href="#contact">Contact me</a>
       </div>
-      <div class="meter__item">
-        <span class="meter__value" data-count="44309">0</span>
-        <span class="meter__label">MW Capacity Tracked</span>
-      </div>
-      <div class="meter__item">
-        <span class="meter__value" data-count="50">0</span>
-        <span class="meter__label">States Analyzed</span>
+      <div class="hero__socials">
+        <a href="https://linkedin.com/in/giancarlo-michael" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="https://github.com/GianiMichael" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="mailto:Giancarlo.Michael@outlook.com" aria-label="Email">Email</a>
       </div>
     </div>
-
-    <div class="hero__cta">
-      <a href="#projects" class="btn btn--primary">See the work</a>
-      <a href="#contact" class="btn btn--ghost">Close the circuit</a>
+    <div class="hero__photo">
+      <img src="assets/headshot.png" alt="Portrait of Giancarlo Michael">
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="section" id="about">
-    <p class="section__jct">JCT 01</p>
-    <h2 class="section__title">About</h2>
-
+    <p class="section__eyebrow">About</p>
+    <h2 class="section__title">A bit about my path</h2>
     <div class="about__grid">
       <div class="about__copy">
         <p>
-          I'm Giani — currently Global Account Lead at Six Play Consulting,
-          and Product Lead for ASTRA, a B2B SaaS platform I helped build
-          from scratch to manage enterprise telecom procurement and
-          contract lifecycles across multiple carriers.
+          I'm currently Global Account Lead at Six Play Consulting, where I manage
+          a portfolio of 20+ enterprise accounts across EV, aviation, manufacturing,
+          banking, and AI infrastructure. I also serve as Product Lead for ASTRA, a
+          B2B SaaS platform I've helped build from the ground up for enterprise
+          technology lifecycle management.
         </p>
         <p>
-          Telecom procurement and clean energy procurement run on the same
-          circuit: supplier complexity, contract lifecycle management, and
-          multi-party relationships inside a regulated technical market.
-          This site is where I've been proving that out — combining a
-          decade of federal net metering data and documenting how ASTRA's
-          architecture maps onto energy supplier management.
+          My academic background is in sustainability, and over the last year I've
+          been deliberately building toward clean energy sales and partnerships —
+          the procurement and supplier-management skills are the same muscle,
+          just applied to a different market. This site is where I've been proving
+          that out: a decade of federal net metering data, a business intelligence
+          dashboard, and documentation of how ASTRA's architecture maps onto
+          energy supplier management.
         </p>
       </div>
-
-      <div class="about__chips">
-        <span class="chip">Supplier Management</span>
-        <span class="chip">Contract Lifecycle Mgmt</span>
-        <span class="chip">Enterprise Procurement</span>
-        <span class="chip">Python</span>
-        <span class="chip">Power BI</span>
-        <span class="chip">Tableau</span>
-        <span class="chip">Regulated Markets</span>
-        <span class="chip">B2B SaaS Product</span>
+      <div class="about__facts">
+        <div class="fact">
+          <span class="fact__label">Location</span>
+          <span class="fact__value">San Diego, CA &middot; Open to remote</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Education</span>
+          <span class="fact__value">B.S. Business Administration, Minor in Sustainability<br>San Diego State University, 2022</span>
+        </div>
+        <div class="fact">
+          <span class="fact__label">Currently</span>
+          <span class="fact__value">Global Account Lead, Six Play Consulting</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <p class="section__jct">JCT 02</p>
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="section__eyebrow">Skills</p>
+    <h2 class="section__title">What I bring</h2>
+    <div class="chips">
+      <span class="chip">Enterprise Account Management</span>
+      <span class="chip">Business Development</span>
+      <span class="chip">Commercial Procurement Strategy</span>
+      <span class="chip">Supplier Sourcing &amp; Vendor Mgmt</span>
+      <span class="chip">Contract Negotiation</span>
+      <span class="chip">Energy Markets &amp; Sustainability</span>
+      <span class="chip">Pipeline Forecasting</span>
+      <span class="chip">Executive Presentations</span>
+      <span class="chip">Python</span>
+      <span class="chip">Power BI</span>
+      <span class="chip">Tableau</span>
+      <span class="chip">HubSpot CRM</span>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <p class="section__eyebrow">Portfolio</p>
     <h2 class="section__title">Projects</h2>
 
     <div class="cards">
-      <!-- Project A: Net Metering -->
       <article class="card">
         <div class="card__media">
-          <!-- PLACEHOLDER: add assets/dashboard-preview.png and swap the div below for an <img> -->
-          <div class="card__media-placeholder">Dashboard preview — add screenshot</div>
+          <!-- PLACEHOLDER: add assets/dashboard-preview.png -->
+          <div class="card__media-placeholder">Dashboard preview</div>
         </div>
         <div class="card__body">
           <h3>U.S. Net Metering Analysis, 2015–2024</h3>
           <p>
-            Ten years of EIA Form 861 net metering data, cleaned in Python
-            and explored in Power BI, published as an interactive Tableau
-            dashboard covering solar capacity growth, commercial adoption
-            by state, and residential-vs-commercial trends.
+            Ten years of EIA Form 861 net metering data, cleaned in Python and
+            explored in Power BI, published as an interactive Tableau dashboard
+            covering solar capacity growth and commercial adoption by state.
           </p>
           <ul class="card__tags">
-            <li>Python</li>
-            <li>Power BI</li>
-            <li>Tableau Public</li>
+            <li>Python</li><li>Power BI</li><li>Tableau Public</li>
           </ul>
           <div class="card__links">
             <a href="https://public.tableau.com/app/profile/giancarlo.michael/viz/USNetMeteringAnalysis2015-2024/Dashboard1" target="_blank" rel="noopener">Live Dashboard →</a>
-            <a href="https://github.com/GianiMichael/solar-analysis" target="_blank" rel="noopener">GitHub Repo →</a>
+            <a href="https://github.com/GianiMichael/solar-analysis" target="_blank" rel="noopener">GitHub →</a>
           </div>
         </div>
       </article>
 
-      <!-- Project B: ASTRA -->
       <article class="card">
         <div class="card__media">
-          <!-- PLACEHOLDER: add assets/astra-preview.png (redacted) and swap the div below for an <img> -->
-          <div class="card__media-placeholder">ASTRA preview — add redacted screenshot</div>
+          <!-- PLACEHOLDER: add assets/astra-preview.png (redacted) -->
+          <div class="card__media-placeholder">ASTRA preview</div>
         </div>
         <div class="card__body">
           <h3>ASTRA — Enterprise Telecom Procurement Platform</h3>
           <p>
-            Built and led a proprietary B2B SaaS platform managing
-            enterprise telecom procurement, contract lifecycle, and client
-            reporting across multiple carriers and clients — the same
-            operational shape as enterprise clean energy procurement.
+            Built and led a proprietary B2B SaaS platform managing enterprise
+            telecom procurement, contract lifecycle, and client reporting across
+            multiple carriers — the same operational shape as clean energy
+            procurement.
           </p>
           <ul class="card__tags">
-            <li>Product Lead</li>
-            <li>B2B SaaS</li>
-            <li>Contract Lifecycle Mgmt</li>
+            <li>Product Lead</li><li>B2B SaaS</li><li>Contract Lifecycle Mgmt</li>
           </ul>
           <div class="card__links">
-            <!-- PLACEHOLDER: confirm final ASTRA case-study repo URL -->
-            <a href="https://github.com/GianiMichael/astra-platform" target="_blank" rel="noopener">GitHub Repo →</a>
+            <a href="https://github.com/GianiMichael/astra-platform" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <!-- PLACEHOLDER: add assets/revenue-preview.png -->
+          <div class="card__media-placeholder">Revenue dashboard preview</div>
+        </div>
+        <div class="card__body">
+          <h3>Revenue Performance Dashboard</h3>
+          <p>
+            A fully interactive business intelligence dashboard built from scratch
+            in HTML, CSS, and vanilla JavaScript — quota attainment tracking, an
+            8-tier commission calculator, SPIFF tracking, and an annual run-rate
+            projector, backed by Airtable.
+          </p>
+          <ul class="card__tags">
+            <li>JavaScript</li><li>Airtable API</li><li>No frameworks</li>
+          </ul>
+          <div class="card__links">
+            <a href="https://apex-consulting-dashboard.netlify.app/" target="_blank" rel="noopener">Live Demo →</a>
+            <a href="https://github.com/GianiMichael/revenue-dashboard" target="_blank" rel="noopener">GitHub →</a>
           </div>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- WRITEUPS -->
-  <section class="section" id="writeups">
-    <p class="section__jct">JCT 03</p>
-    <h2 class="section__title">Writeups</h2>
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <p class="section__eyebrow">Testimonials</p>
+    <h2 class="section__title">What people say</h2>
 
-    <div class="note-card">
-      <span class="note-card__tag">IN DRAFT</span>
-      <p>
-        First writeup — on what building ASTRA taught me about supplier
-        complexity in regulated markets — is in progress. Check back soon.
-      </p>
+    <div class="testimonials">
+      <blockquote class="testimonial">
+        <p>
+          "I've had the privilege of working alongside Giani for four years and
+          have consistently been impressed by his leadership and professionalism.
+          He has a unique ability to build trust with stakeholders at every level,
+          from operational teams to executive decision-makers — and is
+          approachable, dependable, and highly respected by both customers and
+          colleagues."
+        </p>
+        <footer>
+          <span class="testimonial__name">Larissa Vanolli</span>
+          <span class="testimonial__role">Project Manager</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        <p>
+          "Giancarlo brings a rare combination of strategic thinking and
+          execution — he has a clear ability to streamline complex situations,
+          align stakeholders, and drive the right outcomes even under pressure.
+          I have 100% trust in Giancarlo to do right by the customer and create a
+          seamless, positive experience for everyone involved."
+        </p>
+        <footer>
+          <span class="testimonial__name">Morgan Williams</span>
+          <span class="testimonial__role">Enterprise &amp; Channel Sales Account Director</span>
+        </footer>
+      </blockquote>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section class="section section--contact" id="contact">
-    <p class="section__jct">JCT 04</p>
-    <h2 class="section__title">Close the circuit</h2>
+    <p class="section__eyebrow">Contact</p>
+    <h2 class="section__title">Let's talk</h2>
     <p class="contact__sub">Always happy to talk clean energy, procurement, or data.</p>
 
-    <div class="contact__links">
-      <!-- PLACEHOLDER: add LinkedIn URL -->
-      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-      <!-- PLACEHOLDER: add email address -->
-      <a href="mailto:PLACEHOLDER@example.com">Email</a>
-      <a href="https://github.com/GianiMichael" target="_blank" rel="noopener">GitHub</a>
+    <div class="contact__grid">
+      <a class="contact__item" href="mailto:Giancarlo.Michael@outlook.com">
+        <span class="contact__label">Email</span>
+        <span class="contact__value">Giancarlo.Michael@outlook.com</span>
+      </a>
+      <a class="contact__item" href="tel:+16616095805">
+        <span class="contact__label">Phone</span>
+        <span class="contact__value">(661) 609-5805</span>
+      </a>
+      <a class="contact__item" href="https://linkedin.com/in/giancarlo-michael" target="_blank" rel="noopener">
+        <span class="contact__label">LinkedIn</span>
+        <span class="contact__value">linkedin.com/in/giancarlo-michael</span>
+      </a>
+      <a class="contact__item" href="https://github.com/GianiMichael" target="_blank" rel="noopener">
+        <span class="contact__label">GitHub</span>
+        <span class="contact__value">github.com/GianiMichael</span>
+      </a>
     </div>
   </section>
 
 </main>
 
 <footer class="footer">
-  <p>&copy; <span id="year"></span> Giancarlo Michael</p>
+  <p>&copy; <span id="year"></span> Giancarlo Michael &middot; San Diego, CA</p>
 </footer>
 
 <script src="js/main.js"></script>
