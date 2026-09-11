@@ -32,23 +32,21 @@
   <!-- HERO -->
   <section class="hero">
     <div class="section-inner">
-      <div class="hero__top">
-        <div class="hero__intro">
-          <p class="eyebrow">Technology &amp; Energy Advisory</p>
-          <h1><span class="headline-muted">Hi, I'm</span> Giancarlo.</h1>
-          <p class="hero__role">I help mid to enterprise businesses make smarter decisions, and I'm extending that into energy.</p>
+      <p class="eyebrow">Technology &amp; Energy Advisory</p>
+      <h1><span class="headline-muted">Hi, I'm</span> Giancarlo.</h1>
+      <div class="hero-text-photo-row">
+        <div class="hero-text-col">
+          <p class="hero-role">I help mid to enterprise businesses make smarter decisions, and I'm extending that into energy.</p>
+          <p class="hero-sub">
+            For three-plus years, I've consulted enterprise clients on complex
+            technology decisions across telecom, AI infrastructure, and
+            connectivity. Now I want to bring that same advisory approach to how
+            businesses think about energy, on-site generation, battery systems,
+            and sustainability.
+          </p>
         </div>
-        <div class="hero__photo">
-          <img src="assets/headshot.png" alt="Portrait of Giancarlo Michael">
-        </div>
+        <img class="hero-photo" src="assets/headshot.png" alt="Portrait of Giancarlo Michael">
       </div>
-      <p class="hero__sub">
-        For three-plus years, I've consulted enterprise clients on complex
-        technology decisions across telecom, AI infrastructure, and
-        connectivity. Now I want to bring that same advisory approach to how
-        businesses think about energy, on-site generation, battery systems,
-        and sustainability.
-      </p>
       <div class="hero__cta">
         <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noopener">Download resume</a>
         <a class="btn btn--ghost" href="#contact">Contact me</a>
@@ -106,28 +104,38 @@
     <div class="section-inner">
       <p class="section__eyebrow">Industries</p>
       <h2 class="section__title"><span class="headline-muted">Where I've</span> worked</h2>
-      <div class="ticker">
-        <div class="ticker__track">
-          <div class="ticker__group">
-            <span class="chip chip--industry">EV</span>
-            <span class="chip chip--industry">Aviation</span>
-            <span class="chip chip--industry">Manufacturing</span>
-            <span class="chip chip--industry">Banking</span>
-            <span class="chip chip--industry">Gaming</span>
-            <span class="chip chip--industry">Hospitality</span>
-            <span class="chip chip--industry">Telecommunications</span>
-            <span class="chip chip--industry">AI Infrastructure</span>
-          </div>
-          <div class="ticker__group" aria-hidden="true">
-            <span class="chip chip--industry">EV</span>
-            <span class="chip chip--industry">Aviation</span>
-            <span class="chip chip--industry">Manufacturing</span>
-            <span class="chip chip--industry">Banking</span>
-            <span class="chip chip--industry">Gaming</span>
-            <span class="chip chip--industry">Hospitality</span>
-            <span class="chip chip--industry">Telecommunications</span>
-            <span class="chip chip--industry">AI Infrastructure</span>
-          </div>
+      <div class="industries-grid">
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          <p class="industry-card__name">EV</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          <p class="industry-card__name">Aviation</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          <p class="industry-card__name">Manufacturing</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-6 10 6"></path><path d="M4 10v11"></path><path d="M20 10v11"></path><path d="M2 21h20"></path><path d="M8 21v-7"></path><path d="M12 21v-7"></path><path d="M16 21v-7"></path></svg>
+          <p class="industry-card__name">Banking</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="5"></rect><line x1="7" y1="10" x2="7" y2="14"></line><line x1="5" y1="12" x2="9" y2="12"></line><circle cx="15" cy="10.5" r="1"></circle><circle cx="17.5" cy="13" r="1"></circle></svg>
+          <p class="industry-card__name">Gaming</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20v-8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h4v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8"></path><path d="M2 17h20"></path><path d="M6 10V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4"></path></svg>
+          <p class="industry-card__name">Hospitality</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+          <p class="industry-card__name">Telecommunications</p>
+        </div>
+        <div class="industry-card">
+          <svg class="industry-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+          <p class="industry-card__name">AI Infrastructure</p>
         </div>
       </div>
     </div>
