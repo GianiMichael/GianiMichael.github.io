@@ -496,6 +496,8 @@ h3 {
   min-width: 0;
   overflow: hidden;
   background: #090A0D;
+  display: flex;
+  align-items: center;
 }
 
 .card__media img {
@@ -510,6 +512,45 @@ h3 {
 .card:hover .card__media img,
 .card:focus-within .card__media img {
   filter: grayscale(0) brightness(1);
+}
+
+/* ---------- Browser-chrome frame for project screenshots ---------- */
+.browser-frame {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #101114;
+}
+
+.browser-frame__bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #16171c;
+  border-bottom: 1px solid var(--line);
+}
+
+.browser-frame__bar .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3a3d45;
+}
+.browser-frame__bar .dot:nth-child(1) { background: #D9A441; opacity: 0.7; }
+
+.browser-frame__viewport {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.browser-frame__viewport img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .card__body {
@@ -570,7 +611,6 @@ h3 {
 
 @media (max-width: 860px) {
   .card__row { flex-direction: column !important; min-height: 0; }
-  .card__media { aspect-ratio: 16 / 10; }
   .card__body { justify-content: flex-start; }
 }
 
