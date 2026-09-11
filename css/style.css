@@ -125,15 +125,6 @@ h3 {
   padding: clamp(80px, 10vw, 140px) 0 clamp(64px, 8vw, 110px);
 }
 
-.hero__grid {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  align-items: start;
-  gap: clamp(32px, 5vw, 64px);
-}
-
-.hero__copy { display: flex; flex-direction: column; justify-content: center; }
-
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.82rem;
@@ -145,11 +136,19 @@ h3 {
 }
 
 .hero h1 {
-  font-size: clamp(2.75rem, 6.5vw, 5rem);
+  font-size: clamp(3rem, 7.5vw, 5.75rem);
   font-weight: 700;
-  line-height: 1.05;
-  margin-bottom: 12px;
+  line-height: 1.02;
+  margin-bottom: clamp(28px, 4vw, 44px);
 }
+
+.hero__lower {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(32px, 5vw, 56px);
+}
+
+.hero__copy { flex: 1 1 auto; min-width: 0; }
 
 .hero__role {
   font-family: var(--font-display);
@@ -190,13 +189,13 @@ h3 {
 
 .hero__photo {
   position: relative;
-  max-width: 280px;
-  margin-left: auto;
+  flex: 0 0 auto;
+  width: clamp(96px, 12vw, 150px);
   aspect-ratio: 4 / 5;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
   clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
-  box-shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 14px 30px -18px rgba(0, 0, 0, 0.7);
 }
 
 .hero__photo img {
@@ -208,8 +207,8 @@ h3 {
 
 @media (max-width: 760px) {
   .hero { padding: 56px 0 48px; }
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__photo { order: -1; max-width: 200px; margin: 0 auto; clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%); }
+  .hero__lower { flex-direction: column; }
+  .hero__photo { width: 120px; }
 }
 
 /* ---------- Section shell ---------- */
@@ -317,6 +316,18 @@ h3 {
   gap: clamp(28px, 4vw, 40px);
 }
 
+.spec-col--skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: clamp(24px, 3vw, 40px);
+  row-gap: clamp(28px, 4vw, 40px);
+  align-content: start;
+}
+
+@media (max-width: 560px) {
+  .spec-col--skills { grid-template-columns: 1fr; }
+}
+
 .spec-label {
   font-family: var(--font-mono);
   font-weight: 500;
@@ -357,6 +368,7 @@ h3 {
   line-height: 1.6;
 }
 .spec-edu strong { font-weight: 600; }
+.spec-edu + .spec-edu { margin-top: 16px; }
 
 @media (max-width: 760px) {
   .spec-columns { grid-template-columns: 1fr; }
