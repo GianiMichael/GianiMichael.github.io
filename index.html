@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Giancarlo Michael</title>
 <meta name="description" content="Giancarlo (Giani) Michael, enterprise account management, procurement strategy, and clean energy portfolio.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -102,6 +103,22 @@
     </div>
   </section>
 
+  <!-- INDUSTRIES -->
+  <section class="section section--industries" id="industries">
+    <p class="section__eyebrow">Industries</p>
+    <h2 class="section__title">Where I've worked</h2>
+    <div class="chips chips--industries">
+      <span class="chip chip--industry">EV</span>
+      <span class="chip chip--industry">Aviation</span>
+      <span class="chip chip--industry">Manufacturing</span>
+      <span class="chip chip--industry">Banking</span>
+      <span class="chip chip--industry">Gaming</span>
+      <span class="chip chip--industry">Hospitality</span>
+      <span class="chip chip--industry">Telecommunications</span>
+      <span class="chip chip--industry">AI Infrastructure</span>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section class="section" id="skills">
     <p class="section__eyebrow">Skills</p>
@@ -136,13 +153,23 @@
         <div class="card__media">
           <img src="assets/dashboard-preview.png" alt="U.S. Net Metering Analysis dashboard preview">
         </div>
+        <div class="card__hairline"></div>
         <div class="card__body">
           <h3>U.S. Net Metering Analysis, 2015–2024</h3>
-          <p>
-            Ten years of EIA Form 861 net metering data, cleaned in Python and
-            explored in Power BI, published as an interactive Tableau dashboard
-            covering solar capacity growth and commercial adoption by state.
-          </p>
+          <dl class="card__pillars">
+            <div class="card__pillar">
+              <dt>Problem</dt>
+              <dd>No easy way to see how U.S. commercial solar adoption and net metering capacity have evolved state-by-state over the last decade.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Approach</dt>
+              <dd>Cleaned ten years of EIA Form 861 data in Python, modeled it in Power BI, and published it as an interactive Tableau dashboard.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Result</dt>
+              <dd>A public, interactive view of solar capacity growth and commercial adoption trends across all 50 states.</dd>
+            </div>
+          </dl>
           <ul class="card__tags">
             <li>Python</li><li>Power BI</li><li>Tableau Public</li>
           </ul>
@@ -157,14 +184,23 @@
         <div class="card__media">
           <img src="assets/astra-preview.png" alt="ASTRA platform preview">
         </div>
+        <div class="card__hairline"></div>
         <div class="card__body">
           <h3>ASTRA: Enterprise Telecom Procurement Platform</h3>
-          <p>
-            Built and led a proprietary B2B SaaS platform managing enterprise
-            telecom procurement, contract lifecycle, and client reporting across
-            multiple carriers, the same operational shape as clean energy
-            procurement.
-          </p>
+          <dl class="card__pillars">
+            <div class="card__pillar">
+              <dt>Problem</dt>
+              <dd>Six Play needed a way to manage enterprise telecom procurement, contracts, and client reporting across many carriers without stitching together spreadsheets.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Approach</dt>
+              <dd>Built and led a proprietary B2B SaaS platform from the ground up, covering the full contract lifecycle.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Result</dt>
+              <dd>A production platform still in active use, with the same operational shape as clean energy procurement.</dd>
+            </div>
+          </dl>
           <ul class="card__tags">
             <li>Product Lead</li><li>B2B SaaS</li><li>Contract Lifecycle Mgmt</li>
           </ul>
@@ -178,14 +214,23 @@
         <div class="card__media">
           <img src="assets/revenue-preview.png" alt="Revenue Performance Dashboard preview">
         </div>
+        <div class="card__hairline"></div>
         <div class="card__body">
           <h3>Revenue Performance Dashboard</h3>
-          <p>
-            A fully interactive business intelligence dashboard built from scratch
-            in HTML, CSS, and vanilla JavaScript, with quota attainment tracking, an
-            8-tier commission calculator, SPIFF tracking, and an annual run-rate
-            projector, backed by Airtable.
-          </p>
+          <dl class="card__pillars">
+            <div class="card__pillar">
+              <dt>Problem</dt>
+              <dd>Sales leadership needed real-time visibility into quota attainment and commission payouts without waiting on manual spreadsheet updates.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Approach</dt>
+              <dd>Built a fully interactive BI dashboard from scratch in HTML, CSS, and vanilla JavaScript, backed by Airtable, with an 8-tier commission calculator and SPIFF tracking.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Result</dt>
+              <dd>A self-serve dashboard giving reps and leadership real-time run-rate projections and payout visibility.</dd>
+            </div>
+          </dl>
           <ul class="card__tags">
             <li>JavaScript</li><li>Airtable API</li><li>No frameworks</li>
           </ul>
@@ -200,17 +245,23 @@
         <div class="card__media">
           <img src="assets/homepage.png" alt="WaveLead Navigator preview">
         </div>
+        <div class="card__hairline"></div>
         <div class="card__body">
           <h3>WaveLead Navigator</h3>
-          <p>
-            A B2B lead generation and prospecting tool for deregulated energy
-            markets, combining Google Places search with a modular contact
-            enrichment waterfall, industry-specific decision-maker tier
-            matching, and one-click outreach routing. Includes a live market
-            intelligence engine ranking opportunities by energy intensity,
-            commercial rates, and market density across public EIA and Census
-            data.
-          </p>
+          <dl class="card__pillars">
+            <div class="card__pillar">
+              <dt>Problem</dt>
+              <dd>Prospecting for commercial accounts in deregulated energy markets meant manually cross-referencing business listings against market and rate data.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Approach</dt>
+              <dd>Built a B2B lead-gen tool combining Google Places search, a modular contact enrichment waterfall, decision-maker tier matching, and a market intelligence engine layered on public EIA and Census data.</dd>
+            </div>
+            <div class="card__pillar">
+              <dt>Result</dt>
+              <dd>One-click prospecting and outreach routing, ranking opportunities by energy intensity and market density.</dd>
+            </div>
+          </dl>
           <ul class="card__tags">
             <li>React</li><li>Supabase</li><li>API Integration</li>
           </ul>
