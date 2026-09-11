@@ -280,8 +280,45 @@ h3 {
 .about__copy p { color: var(--text-muted); max-width: 66ch; }
 .about__copy p + p { margin-top: 16px; }
 
-.about__focus { margin-top: 28px; max-width: 66ch; }
-.about__focus + p { margin-top: 28px; }
+.about__block { margin-top: 36px; }
+
+.about__lead { color: var(--text-muted); max-width: 66ch; margin: 0 0 14px; }
+.about__closing { color: var(--text-muted); max-width: 66ch; margin: 16px 0 0; }
+
+.about__projects {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 66ch;
+}
+.about__projects li { color: var(--text-muted); line-height: 1.55; }
+.about__projects a { font-weight: 600; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 20px; }
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border: 1px solid var(--accent);
+  background: var(--card-bg);
+  border-radius: 999px;
+  color: var(--text);
+}
+
+.about__callout {
+  margin: 0;
+  padding: 18px 22px;
+  background: var(--card-bg);
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1.05rem;
+  max-width: 66ch;
+}
 
 .about__facts { display: flex; flex-direction: column; gap: 20px; }
 .fact {
