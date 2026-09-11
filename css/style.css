@@ -24,6 +24,7 @@ body {
   color: var(--text);
   font-family: var(--font-body);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a { color: var(--accent); text-decoration: none; }
@@ -126,8 +127,8 @@ h3 {
 
 .hero__grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: stretch;
+  grid-template-columns: 1.8fr 1fr;
+  align-items: start;
   gap: clamp(32px, 5vw, 64px);
 }
 
@@ -189,11 +190,13 @@ h3 {
 
 .hero__photo {
   position: relative;
-  min-height: 420px;
-  border-radius: 20px;
+  max-width: 280px;
+  margin-left: auto;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
   overflow: hidden;
-  clip-path: polygon(0 0, 100% 0, 100% 84%, 84% 100%, 0 100%);
-  box-shadow: 0 30px 70px -30px rgba(0, 0, 0, 0.7);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
+  box-shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.7);
 }
 
 .hero__photo img {
@@ -201,19 +204,12 @@ h3 {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(1) brightness(0.8);
-  transition: filter 0.6s ease;
-}
-
-.hero__photo:hover img,
-.hero__photo:focus-within img {
-  filter: grayscale(0) brightness(1);
 }
 
 @media (max-width: 760px) {
   .hero { padding: 56px 0 48px; }
   .hero__grid { grid-template-columns: 1fr; }
-  .hero__photo { order: -1; min-height: 280px; clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%); }
+  .hero__photo { order: -1; max-width: 200px; margin: 0 auto; clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%); }
 }
 
 /* ---------- Section shell ---------- */
@@ -253,6 +249,21 @@ h3 {
 
 .about__copy p { color: var(--text-muted); max-width: 66ch; }
 .about__copy p + p { margin-top: 16px; }
+
+.about__focus { margin-top: 28px; max-width: 66ch; }
+
+.about__pullquote {
+  font-family: var(--font-headline);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  line-height: 1.35;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding-left: 24px;
+  margin: 32px 0 0;
+  max-width: 62ch;
+}
 
 .about__facts { display: flex; flex-direction: column; gap: 20px; }
 .fact {
@@ -339,6 +350,14 @@ h3 {
   color: var(--text-muted);
 }
 
+.spec-edu {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.spec-edu strong { font-weight: 600; }
+
 @media (max-width: 760px) {
   .spec-columns { grid-template-columns: 1fr; }
 }
@@ -347,6 +366,9 @@ h3 {
 .ticker {
   position: relative;
   overflow: hidden;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
   padding: 28px 0 6px;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent);
   mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent);
@@ -356,11 +378,6 @@ h3 {
   display: flex;
   width: max-content;
   animation: ticker-scroll 26s linear infinite;
-}
-
-.ticker:hover .ticker__track,
-.ticker:focus-within .ticker__track {
-  animation-play-state: paused;
 }
 
 .ticker__group {
