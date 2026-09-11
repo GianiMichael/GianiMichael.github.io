@@ -132,7 +132,7 @@ h3 {
 /* ---------- Layout shell ---------- */
 /* Single shared width/padding system used by every section, hero included. */
 .section-inner {
-  max-width: 1200px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 clamp(24px, 5vw, 64px);
 }
@@ -172,7 +172,6 @@ h3 {
 
 .hero-text-col {
   flex: 1;
-  max-width: 600px;
 }
 
 .hero-title {
