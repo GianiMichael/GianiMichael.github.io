@@ -282,6 +282,19 @@ h3 {
 
 .about__block { margin-top: 36px; }
 
+/* ---------- Pivot ---------- */
+.pivot__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+.pivot__col { min-width: 0; }
+
+@media (max-width: 760px) {
+  .pivot__grid { grid-template-columns: 1fr; }
+}
+
 .about__lead { color: var(--text-muted); max-width: 66ch; margin: 0 0 14px; }
 .about__closing { color: var(--text-muted); max-width: 66ch; margin: 16px 0 0; }
 
