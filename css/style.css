@@ -4,7 +4,7 @@
   --bg-gradient: radial-gradient(ellipse at top, #131519 0%, #0B0C0F 55%);
   --card-bg: #101114;
   --text: #EDEEF0;
-  --text-muted: #9BA0AB;
+  --text-muted: #B8BCC4;
   --line: rgba(237, 238, 240, 0.1);
   --accent: #1E8F82;
   --accent-bright: #2BB3A3;
@@ -403,12 +403,18 @@ h3 {
 
 .spec-edu {
   margin: 0;
-  color: var(--text);
   font-size: 1rem;
   line-height: 1.6;
 }
-.spec-edu strong { font-weight: 600; }
-.spec-edu + .spec-edu { margin-top: 16px; }
+.spec-edu strong {
+  font-weight: 700;
+  color: var(--text);
+}
+.spec-edu__detail {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.spec-edu + .spec-edu { margin-top: 22px; }
 
 @media (max-width: 760px) {
   .spec-columns { grid-template-columns: 1fr; }
